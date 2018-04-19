@@ -3,7 +3,7 @@ package abhishekint.com.roundimage;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class RoundImageView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
