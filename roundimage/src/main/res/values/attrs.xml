@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="circleColor" format="color"></attr>
+        <attr name="circleText" format="string"></attr>
+        <attr name="circleTextColor" format="color"></attr>
+    </declare-styleable>
+</resources>
