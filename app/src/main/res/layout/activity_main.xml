@@ -5,11 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="abhishekint.com.roundimageview.MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Click Me"
+        android:id="@+id/btn"/>
 
     <abhishekint.com.roundimage.RoundImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:id="@+id/round_image"
         app:circleColor="@color/colorAccent"
         app:circleText="@string/app_name"
         app:circleTextColor="@color/colorPrimary"/>

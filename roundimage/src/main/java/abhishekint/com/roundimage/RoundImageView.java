@@ -50,4 +50,35 @@ public class RoundImageView extends View {
         circlePaint.setTextAlign(Paint.Align.CENTER);
         canvas.drawText(circleText,width/2,height/2,circlePaint);
     }
+
+    public int getCircleColor() {
+        return circleColor;
+    }
+
+    public int getCircleTextColor() {
+        return circleTextColor;
+    }
+
+    public String getCircleText() {
+        return circleText;
+    }
+
+    public void setCircleColor(int circleColor) {
+        this.circleColor = circleColor;
+        //make the onDraw method execute again, so that the new values affect the View.For that write below command
+        invalidate();
+        requestLayout();
+    }
+
+    public void setCircleTextColor(int circleTextColor) {
+        this.circleTextColor = circleTextColor;
+        invalidate();
+        requestLayout();
+    }
+
+    public void setCircleText(String circleText) {
+        this.circleText = circleText;
+        invalidate();
+        requestLayout();
+    }
 }
