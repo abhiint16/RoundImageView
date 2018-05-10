@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     tools:context="abhishekint.com.roundimageview.MainActivity">
@@ -18,8 +19,9 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/round_image"
-        app:circleColor="@color/colorAccent"
-        app:circleText="@string/app_name"
-        app:circleTextColor="@color/colorPrimary"/>
+        custom:circleColor="@color/colorAccent"
+        custom:circleText="@string/app_name"
+        custom:circleTextColor="#fff"
+        android:src="@drawable/ic_launcher_background"/>
 
 </LinearLayout>
