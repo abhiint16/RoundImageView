@@ -3,7 +3,7 @@ This is a library that provides a RoundView with a text at the center. You can c
 
 To use this library, add the dependency in the module level build.gradle file.
 
-implementation 'abhishek.com.roundimage:roundimage:1.0.0'
+      implementation 'abhishek.com.roundimage:roundimage:1.0.0'
 
 Now you can add the view by writing,
 
