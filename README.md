@@ -1,7 +1,7 @@
 # RoundImageView
 This is a library that provides a RoundView with a text at the center. You can change the color of the roundview as well as the text. 
 
-To use this library, add the dependency in the module level build.gradle file.
+To use this library, add the dependency in the module level **build.gradle** file.
 
       implementation 'abhishek.com.roundimage:roundimage:1.0.0'
 
