@@ -1,5 +1,31 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'RoundView'    //this is the repository name on the bintray site
+    bintrayName = 'RoundViewWithCenterText'     //this is the package name on the bintray site, so if this  package already exists then it will take
+    //that but if it doesnt exist then it will craete the package with the name in the above repository
+
+    libraryName = 'roundimage'  //libraryname ,artifact must be same as the library module name
+    artifact = 'roundimage'
+    publishedGroupId='abhishek.com.roundimage' //Now the library link will be :- (compile 'PUBLISH_GROUP_ID:ARTIFACT_ID:PUBLISH_VERSION')
+    PUBLISH_GROUP_ID = 'abhishek.com.roundimage'   //SO, (compile 'abhishek.com.roundimage:roundimage:1.0.0')
+    PUBLISH_ARTIFACT_ID = 'roundimage'
+    PUBLISH_VERSION = '1.0.0'
+    libraryVersion='1.0.0'
+    libraryDescription = 'This provides a round view with a text in the center'
+
+    siteUrl = 'https://github.com/abhiint16/RoundImageView'
+    gitUrl = 'https://github.com/abhiint16/RoundImageView.git'
+
+    developerId = 'abhiint16'
+    developerName = 'Abhishek Kumar'
+    developerEmail = 'abhishekint16@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 26
 
@@ -33,3 +59,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
